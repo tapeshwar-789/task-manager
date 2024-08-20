@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    letter-spacing: 3px;
+    background-color: rgb(88, 87, 87);
+  }
+  
+  /* .fancy {
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a, #f79d00, #f2b447);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: hueRotation 5s infinite linear;
+  } */
+  .fancy {
+    background: linear-gradient(90deg, #ff6b6b, #f94d6a, #f79d00, #f2b447);
+    background-clip: text; /* Add the standard property */
+    -webkit-background-clip: text; /* Keep the prefixed version */
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: hueRotation 5s infinite linear;
+  }
+  
+  
+  .glow {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(71, 39, 39, 0.8), 0 0 20px rgba(87, 39, 39, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.3);
+  }
+  
+  @keyframes hueRotation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
